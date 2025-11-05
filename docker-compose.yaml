@@ -71,7 +71,7 @@ services:
       - MODE=stand-alone
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.unibee-api.rule=Host(`api.yourdomain.com`)"
+      - "traefik.http.routers.unibee-api.rule=Host(`billapi.circulo.ir`)"
       - "traefik.http.routers.unibee-api.entrypoints=websecure"
       - "traefik.http.routers.unibee-api.tls.certresolver=letsencrypt"
       - "traefik.http.services.unibee-api.loadbalancer.server.port=80"
